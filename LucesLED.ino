@@ -19,18 +19,22 @@ void loop()
   delay(100);
   digitalWrite(LEDamarillo, LOW);
   delay(100);
+  
   digitalWrite(LEDrojo, HIGH);
   delay(100);
   digitalWrite(LEDrojo, LOW);
   delay(100);
+  
   digitalWrite(LEDazul, HIGH);
   delay(100);
   digitalWrite(LEDazul, LOW);
   delay(100);
+  
   digitalWrite(LEDverde, HIGH);
   delay(100);
   digitalWrite(LEDverde, LOW);
   delay(100);
+  
   digitalWrite(LEDblanco, HIGH);
   delay(100);
   digitalWrite(LEDblanco, LOW);
