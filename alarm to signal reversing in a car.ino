@@ -17,7 +17,7 @@ void loop()
 {
   medirdistancia();
   Serial.println(distancia);
-  if(distancia>=50&&distancia==0)
+  if(distancia>=50||distancia==0)
   {
     digitalWrite(zumbador, LOW);
   }
@@ -44,14 +44,6 @@ void zumbidodistanciamedia(const int zumbador)
   delay(500);
   digitalWrite(zumbador, LOW);
   delay(500);
-  digitalWrite(zumbador, HIGH);
-  delay(500);
-  digitalWrite(zumbador, LOW);
-  delay(500);
-  digitalWrite(zumbador, HIGH);
-  delay(500);
-  digitalWrite(zumbador, LOW);
-  delay(500);
 }
 
 void zumbidodistanciabaja(const int zumbador)
@@ -60,26 +52,10 @@ void zumbidodistanciabaja(const int zumbador)
   delay(200);
   digitalWrite(zumbador, LOW);
   delay(200);
-  digitalWrite(zumbador, HIGH);
-  delay(200);
-  digitalWrite(zumbador, LOW);
-  delay(200);
-  digitalWrite(zumbador, HIGH);
-  delay(200);
-  digitalWrite(zumbador, LOW);
-  delay(200);
 }
 
 void zumbidodistancianula(const int zumbador)
 {
-  digitalWrite(zumbador, HIGH);
-  delay(50);
-  digitalWrite(zumbador, LOW);
-  delay(50);
-  digitalWrite(zumbador, HIGH);
-  delay(50);
-  digitalWrite(zumbador, LOW);
-  delay(50);
   digitalWrite(zumbador, HIGH);
   delay(50);
   digitalWrite(zumbador, LOW);
